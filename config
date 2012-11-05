@@ -1,0 +1,4 @@
+ngx_addon_name=ngx_drop_privs_module
+CORE_MODULES="$CORE_MODULES ngx_drop_privs_module"
+CORE_LIBS="$CORE_LIBS -lcap"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/ngx_drop_privs.c"
