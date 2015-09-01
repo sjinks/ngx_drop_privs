@@ -4,9 +4,12 @@ compiler:
   - gcc
   - clang
 
-install:
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq libcap-dev
+sudo: false
+
+addons:
+  apt:
+    packages:
+    - libcap-dev
 
 script:
   - git clone https://github.com/nginx/nginx nginx
